@@ -20,7 +20,6 @@ float problem1(){
     
     //output
     //b
-    //Answer 1
     //2.5375
     //a
     //0.75
@@ -35,10 +34,8 @@ double problem2(){
     
     //output
     //a
-    //Answer 2
     //33.5103
     //b
-    //Answer 2
     //19.5091
     
     
@@ -54,10 +51,8 @@ float problem4(){
     
     //output
     //a
-    //Answer 4
     //5050
     //b
-    //Answer 4
     //494550
 }
 
@@ -70,11 +65,17 @@ float problem9(){
     float half_height; //in
     
     stress = 3000; //lbs/in^2
-    inertia = 10.67;
+    inertia = 6.75;
     distance = 8;
-    half_height = 2;
+    half_height = 3;
     
     return max_weight = (stress * inertia) / (distance * half_height);
+    
+    //output
+    //a
+    //2000.62
+    //b
+    //843.75
 }
 
 int main() {
