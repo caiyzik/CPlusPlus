@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 using namespace std;
 
@@ -32,8 +33,45 @@ float chapter2num5() {
     
 }
 
+void chapter3() {
+    //September 12, 2016
+    const double PI = atan(1)*4;
+    double degrees, radians;
+    double cosVal, sinVal, tanVal;
+    
+    //set to 2 decimal places
+    cout << fixed << setprecision(2);
+    
+    //get input
+    cout << "Enter the Angle in Degrees: ";
+    cin >> degrees;
+    
+    //convert to radians
+    radians = degrees * PI /180.0;
+    
+    //get trig values
+    cosVal = cos(radians);
+    sinVal = sin(radians);
+    tanVal = tan(radians);
+    
+    //print out a table
+    
+    const int W = 8;
+    cout << "Sine of    " << degrees << " = " << setw(W) << sinVal << endl;
+    cout << "Cosine of  " << degrees << " = " << setw(W) << cosVal << endl;
+    cout << "Tangent of " << degrees << " = " << setw(W) << tanVal << endl;
+    
+    /*
+     Enter the Angle in Degrees: 91.2
+     Sine of    91.20 =     1.00
+     Cosine of  91.20 =    -0.02
+     Tangent of 91.20 =   -47.74
+     Program ended with exit code: 0
+     */
+}
+
 
 int main() {
-    cout << chapter2num5() <<endl;
+    chapter3();
     return 0;
 }

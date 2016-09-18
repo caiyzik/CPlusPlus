@@ -43,17 +43,19 @@ double problem2(){
 
 float problem4(){
     //calculate sum of integers 1 to 100
-    int num, first_num, difference, sum;
-    num = 1000 - 100;
+    int nums, first_num, difference, sum;
+    nums = 1000 - 100 + 1;
     first_num = 100;
     difference = 1;
-    return sum = (num/2) * (2 * first_num + (num - 1) * difference);
+    return sum = (nums/2) * (2 * first_num + (nums - 1) * difference);
     
     //output
     //a
     //5050
     //b
     //494550
+    
+    //correct output b) 495550
 }
 
 float problem9(){
@@ -65,8 +67,8 @@ float problem9(){
     float half_height; //in
     
     stress = 3000; //lbs/in^2
-    inertia = 6.75;
-    distance = 8;
+    inertia = 54;
+    distance = 8*12;
     half_height = 3;
     
     return max_weight = (stress * inertia) / (distance * half_height);
@@ -76,6 +78,12 @@ float problem9(){
     //2000.62
     //b
     //843.75
+    
+    //problems: didn't convert feet to inches
+    
+    //new output
+    //a) 166.719 Why?
+    //b) 562.5
 }
 
 int main() {
