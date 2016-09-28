@@ -70,8 +70,81 @@ void chapter3() {
      */
 }
 
+void chapter4(){
+    //September 19, 2016
+    //How to handle error statements(validation):
+    //Tell them what they did wrong
+    //Let them try again and store the new value
+    
+    float hoursWorked, hourlyRate;
+    float regHours, otHours;
+    float regPay, otPay, grossPay;
+    float otRate;
+    
+    //input
+    cout << "How many hours did you work?" <<endl;
+    cin >> hoursWorked;
+    
+    //validation (must be 0 - 80)
+    
+    while (hoursWorked < 0 || hoursWorked > 80){
+        cout << "Error! Hours worked must be 0-80." <<endl;
+        cout << "Try again";
+        cin >> hoursWorked;
+    }
+    
+    
+    cout << "How much to you get paid per hour?" <<endl;
+    cin >> hourlyRate;
+    
+    //check for overtime
+    if (hoursWorked >= 40){
+        regHours = 40;
+        otHours = hoursWorked - 40;
+    }
+    else {
+        regHours = hoursWorked;
+        otHours = 0;
+    }
+    
+    //calculate Check
+    otRate = hourlyRate * 1.5;
+    regPay = hourlyRate * regHours;
+    otPay = otHours * otRate;
+    grossPay = regPay + otPay;
+    
+    //print payroll
+    cout << "Regular Pay (" << regHours << " @ " << hourlyRate << ") = " <<regPay <<endl;
+    cout << "Overtime Pay (" << otHours << " @ " << otRate << ") = " << otPay <<endl;
+    cout << "Gross Pay" << setw(20) << grossPay << endl;
+    
+    
+}
+
+void chapter5(){
+    //September 26, 2016
+    //Loops
+    //Problem 7 (Prime Numbers)
+    
+    for (int i=2; i<=100; i++){
+        
+        bool isPrime = true;
+        for (int j = 2; j<= sqrt(i) && isPrime; j++){
+            if (i % j == 0){
+                isPrime = false;
+            }
+        }
+        
+        if(isPrime){
+            cout << i << endl;
+        }
+        
+    }
+    
+    
+}
 
 int main() {
-    chapter3();
+    chapter5();
     return 0;
 }

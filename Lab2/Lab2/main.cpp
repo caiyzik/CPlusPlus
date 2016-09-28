@@ -21,14 +21,18 @@ double problem6() {
     cout << "Enter Angle of Ladder: ";
     cin >> angle;
     
-    return height = ladder_length * sin(angle*M_PI/180);
+    return height = ladder_length * sin(angle * M_PI/180);
+    
+    //output
+    //length = 20; angle = 85; height = 19.9239
+    //length = 25; angle = 85; height = 24.9049
     
     
 }
 
 void problem7() {
     // pg 151
-    double a, b, c, x;
+    double a, b, c, x, P;
     
     cout << "Enter value for a:";
     cin >> a;
@@ -42,14 +46,16 @@ void problem7() {
     cout << "Enter value for x:";
     cin >> x;
     
-    cout << "a \t b \t \c \t x \t Polynomial Value" <<endl;
-    cout << a << b << c << x << endl;
+    P = b*x + a*pow(x,2) + c;
     
-    //Am I supposed to display the whole chart or just the outputs?
-    //Would it be easier to use... arrays?
+    cout << "Polynomial Value" <<endl;
+    cout << P << endl;
     
+    //output
+    //all polynomial values from table:
+    //13.48, 40, 30, 12, 8, 0, -12, 545.05, 176.768
     
-    
+
 }
 
 int problem4() {
@@ -63,10 +69,18 @@ int problem4() {
     cin >> t;
     
     return  B = 300000*exp(-0.032*t);
+    //output
+    //t = 10 B = 217844
+    //t = 18 B = 168642
+    //t = 24 B = 139182
+    //t = 36 B = 94801
+    //t = 48 B = 64572
+    //t = 72 B = 29957
+    
     
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     
     int problem_num;
     string ask;
@@ -78,16 +92,13 @@ int main(int argc, const char * argv[]) {
         
         switch (problem_num) {
             case 6:
-                cout << "Answer 1\n";
                 cout << problem6();
                 break;
             case 7:
-                cout << "Answer 2\n";
                 problem7();
                 break;
             case 4:
-                cout << "Answer 4\n";
-                problem4();
+                cout << problem4();
                 break;
             default:
                 break;
