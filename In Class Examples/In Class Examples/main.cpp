@@ -10,7 +10,13 @@
 #include <cmath>
 #include <iomanip>
 
+float getPayment(float, float, int);
+
 using namespace std;
+
+void chapter6(){
+    
+}
 
 float chapter2num5() {
     //Aug 29, 2016
@@ -145,6 +151,33 @@ void chapter5(){
 }
 
 int main() {
-    chapter5();
+    //int menuChoice;
+    //menuChoice = getMenuChoice();
+    
+    //cout << "Choice --> " << menuChoice << endl;
+    
+    float car, rate, pmt;
+    int years;
+    
+    cout << "Enter Price fo Car: ";
+    cin >> car;
+    
+    /* cout << "Enter APR: ";
+     cin >> rate; */
+    
+    for (rate = 0; rate <= 32; rate += 2){
+        pmt = getPayment(car, rate, years);
+        cout << "Rate: " << rate << "% Payment = " << pmt << endl;
+    }
+    
+    cout << "Enter Years: ";
+    cin >> years;
+    
+    pmt = getPayment(car, rate, years);
+    
+    cout << fixed << setprecision(2);
+    cout << "Payment = " << pmt << endl;
+    
+
     return 0;
 }
