@@ -1,2 +1,2 @@
-# C-For-Scientists-and-Engineers-
+# C-Plus-Plus-For-Scientists-and-Engineers
 Labs for CIS 2485-002
