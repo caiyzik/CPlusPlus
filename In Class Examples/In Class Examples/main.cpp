@@ -9,6 +9,7 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
+//#include "chapter6.cpp"
 
 float getPayment(float, float, int);
 
@@ -156,14 +157,15 @@ int main() {
     
     //cout << "Choice --> " << menuChoice << endl;
     
+    /*
     float car, rate, pmt;
     int years;
     
     cout << "Enter Price fo Car: ";
     cin >> car;
     
-    /* cout << "Enter APR: ";
-     cin >> rate; */
+    cout << "Enter APR: ";
+     cin >> rate;
     
     for (rate = 0; rate <= 32; rate += 2){
         pmt = getPayment(car, rate, years);
@@ -177,6 +179,10 @@ int main() {
     
     cout << fixed << setprecision(2);
     cout << "Payment = " << pmt << endl;
+    
+    */
+    
+    chapter3();
     
 
     return 0;

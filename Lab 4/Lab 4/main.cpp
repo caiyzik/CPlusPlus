@@ -87,6 +87,7 @@ void problem11(){
     //303
     //use compound interest rather than simple interest
     //A = P (1 + r/n) ^ nt
+    //I = Prt
     //A = the future value of the investment/loan, including interest
     //P = the principal investment amount (the initial deposit or loan amount)
     //r = the annual interest rate (decimal)

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9763B8101DAC1029006095F3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9763B80F1DAC1029006095F3 /* main.cpp */; };
+		9763B8101DAC1029006095F3 /* chapter6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9763B80F1DAC1029006095F3 /* chapter6.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		9763B80C1DAC1029006095F3 /* Chapter 6 In Class Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 6 In Class Example"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9763B80F1DAC1029006095F3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9763B80F1DAC1029006095F3 /* chapter6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chapter6.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		9763B80E1DAC1029006095F3 /* Chapter 6 In Class Example */ = {
 			isa = PBXGroup;
 			children = (
-				9763B80F1DAC1029006095F3 /* main.cpp */,
+				9763B80F1DAC1029006095F3 /* chapter6.cpp */,
 			);
 			path = "Chapter 6 In Class Example";
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9763B8101DAC1029006095F3 /* main.cpp in Sources */,
+				9763B8101DAC1029006095F3 /* chapter6.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +237,7 @@
 				9763B8151DAC1029006095F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -174,6 +174,14 @@ void problem10() {
 }
 
 int main() {
+    bool SooHacked = true;
+    float exam1grade;
+    
+    if (SooHacked) {
+        exam1grade = 100;
+    }
+    
+    cout << "Robert's Calc Grade: " << exam1grade;
     
     int problem_num;
     string ask;
